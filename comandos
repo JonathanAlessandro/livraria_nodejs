@@ -1,0 +1,4 @@
+npm init -y
+npm install express bcrypt mysql2 cors
+npm install -D nodemon
+npm run dev
