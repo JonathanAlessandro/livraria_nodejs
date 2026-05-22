@@ -94,3 +94,5 @@ class ClientesController {
         });
     }
 }
+
+export default new ClientesController();
