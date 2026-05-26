@@ -5,6 +5,17 @@ class ClientesModel {
     async showClientes() {
         const [rows] = await pool.execute("SELECT * FROM clientes;");
         return rows;
+        
+        //versão utilizando promises de fazer a consulta ao banco de dados, onde a função retorna uma nova Promise que é resolvida ou rejeitada com base no resultado da consulta.
+        // return new Promise((resolve, reject) => {
+        //     pool.query("SELECT * FROM clientes;", (error, results) => {
+        //         if (error) {
+        //             reject(error);
+        //         } else {
+        //             resolve(results);
+        //         }
+        //     });
+        // });
     }
 
     async getClienteByEmail(email) {
