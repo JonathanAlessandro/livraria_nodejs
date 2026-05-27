@@ -10,9 +10,9 @@ class ClientesModel {
         // return new Promise((resolve, reject) => {
         //     pool.query("SELECT * FROM clientes;", (error, results) => {
         //         if (error) {
-        //             reject(error);
+        //             return reject(error);
         //         } else {
-        //             resolve(results);
+        //             return resolve(results);
         //         }
         //     });
         // });
