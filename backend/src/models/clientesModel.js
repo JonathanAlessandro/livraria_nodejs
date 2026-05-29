@@ -21,7 +21,7 @@ class ClientesModel {
     async getClienteByEmail(email) {
         const [[row]] = await pool.execute("SELECT * FROM clientes where email = ?;", [email]);
         return row;
-    }
+    }   
 
     // espera receber um objeto com as propriedades nome, email, telefone, cidade e estado, que correspondem às colunas da tabela clientes no banco de dados. 
     // O método então executa uma consulta SQL para inserir um novo cliente na tabela usando os valores fornecidos. 
